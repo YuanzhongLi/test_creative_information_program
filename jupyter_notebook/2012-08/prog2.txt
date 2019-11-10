@@ -1,0 +1,5 @@
+SET x 1
+SET y 0
+ADD x y
+PRN x y
+PRN 30 y

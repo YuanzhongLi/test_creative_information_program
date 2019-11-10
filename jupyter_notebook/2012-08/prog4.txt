@@ -1,0 +1,11 @@
+SET x 0
+SET y 1
+SUB 4 0
+CMP 10 y
+ADD y x
+JMP 5 0
+SUB 2 0
+BAK 0 0
+ADD 1 y
+BAK 0 0
+PRN x y

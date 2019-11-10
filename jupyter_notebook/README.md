@@ -1,3 +1,13 @@
+## 2012-08
+### theme
+- アセンブリ
+
+#### (1)
+- asciiファイルの開き方
+```
+with open(file_path, encoding='ascii') as f:
+```
+
 ## 2013-08
 ### theme
 - 再帰
