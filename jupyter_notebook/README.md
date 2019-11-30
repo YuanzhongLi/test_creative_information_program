@@ -1,3 +1,60 @@
+## 2011-08
+### theme
+- ゲーム作成
+
+#### (3)
+- 入力受付
+```
+# test.py
+import sys
+inp = sys.argv[1]
+print(inp)
+
+# teminal
+$pypy3 test.py abc
+$abc
+```
+```
+#test.py
+for i in range(0, 5):
+  inp = input()
+  print(input)
+
+# terminal
+$pypy3 test.py
+1
+1
+ab
+ab
+...
+```
+
+- copy
+```
+import copy as cp
+# shallow copy
+cp.copy(x)
+# deepcopy(完全に別なオブジェクトを作る)
+cp.deepcopy(x)
+```
+
+#### (4)
+- random
+```
+import random
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]からランダムに一つ
+a = random.randrange(10)
+# [10, 20, 30, 40, 50, 60, 70, 80, 90]からランダムに一つ
+a = random.randrange(10, 100, 10)
+- time
+```
+import time
+```
+# 現在のunix時間をfloatで取得
+a = time.time()
+```
+
+
 ## 2012-08
 ### theme
 - アセンブリ

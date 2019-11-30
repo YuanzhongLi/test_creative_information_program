@@ -26,5 +26,7 @@ class Game(object):
                 row_str += self.board[i][j]
             print(row_str)
 
-game = Game()
-game.print_board()
+
+game1 = Game()
+
+game1.print_board()

@@ -17,6 +17,8 @@ isort = "*"
 jupyter-highlight-selected-word = "*"
 jupyterthemes = "*"
 yapf = "*"
+pypy3 = "*"
+msvcrt = "*"
 
 [requires]
 python_version = "3.7"
