@@ -1,3 +1,60 @@
+## 実行環境pypy3
+### 実行環境に入る
+```
+$pyenv activate test_pypy
+$pypy3 <file_path>
+```
+
+## 2007-08
+### theme
+- 経路問題
+#### (4)
+- 配列作りかた
+```
+[' ' for _ in range(4)]
+[' ', ' ', ' ', ' ']
+
+# 二次元配列
+[[' ' for _ in range(3)] for _ in range(4)]
+# 3row, 4col
+
+[i for i in range(3)]
+[0, 1, 2]
+```
+- 二次元配列でx, y座標の注意点
+```
+array = \
+[[1, 2, 3],
+ [4, 5, 6],
+ [7, 8, 9]]
+
+# array[x][y]にしないように注意!
+array[y][x]
+```
+
+### (5)
+- queue, stack
+```
+from collections import deque
+l = [0,1,2,3]
+q = deque(l)
+# O(1)でいか四つができ、stackとしてもqueueとしても使用できる
+q.append(4) # 後ろから4を挿入, l=deque([0,1,2,3,4])
+q.appendleft(5)#前から5を挿入, l=deque([5,0,1,2,3,4])
+x = q.pop() #後ろの要素を取り出す, x=4, l=deque([5,0,1,2,3])
+y = q.popleft() # 前の要素を取り出す, y=5, l = deque([0,1,2,3])
+```
+
+### (7)
+- set
+```
+s = set()
+s.add(<setに入れたい要素>)
+<setに存在するか確認したい要素> in s
+# booleanを返す
+s.discard(<削除したい要素>)
+```
+
 ## 2011-08
 ### theme
 - ゲーム作成
@@ -107,7 +164,11 @@ string.split('文字') # 指定文字で分割
 - array結合して文字列
 ```
 '文字'.join(array) # 要素間に文字を追加して文字列にする
-````
+```
+
+## 2017-08
+### theme
+- キャッシュミス
 
 ## 2018-08
 ### theme
