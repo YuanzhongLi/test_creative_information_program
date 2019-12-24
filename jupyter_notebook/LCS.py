@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # ---
 # jupyter:
 #   jupytext:
@@ -14,12 +15,10 @@
 
 import numpy as np
 
-s = "abracadabra"
-t = "avadakedavra"
-
 
 def LCS(s, t):    
-    dp = np.zeros((len(s)+1, len(t)+1), dtype=np.int)
+    # dp[i, j]: sのi番目までの文字列とtのj番目までの文字列を比較した時のlcs
+    dp = [[0 for _ in range(len(t) + 1)] for _ in range(len(s) + 1)]
     for i in range(1, len(s) + 1):
         x = s[i - 1]
         for j in range(1, len(t) + 1):
@@ -31,6 +30,7 @@ def LCS(s, t):
     ret = ""
     i = len(s)
     j = len(t)
+    # 後ろから格納してlcs文字列を作成
     while (1):
         if (i == 0 or j == 0):
             break
@@ -46,4 +46,4 @@ def LCS(s, t):
     return ret[::-1]
 
 
-LCS(s, t)
+LCS("abracadabra", "avadakedavra")

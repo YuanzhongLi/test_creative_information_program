@@ -38,9 +38,10 @@ class Point(object):
             return self.x < other.x
         else:
             return self.y < other.y
-    def __str__(self):
-        return "[{0}, {1}]".format(self.x, self.y)
     
+    def __repr__(self):
+        return "({0:.3f}, {1:.3f})".format(self.x, self.y)
+            
     def norm(self):
         return self.x * self.x + self.y * self.y
     def abs(self):

@@ -12,34 +12,9 @@
 #     name: python3
 # ---
 
-a = 0
-def f1():
-    global a
-    a += 1
-a    
-
-f1()
-a
-
-
-def f2():
-    def local():
-        global a
-        a += 1
-    local()    
-
-
-a
-
-f2()
-a
-
-
-def f3():
-    f1()
-
-
-a
-
-f3()
-a
+def PrintArray(array):
+    for row in array:
+        tmp = ''
+        for ele in row:
+            tmp += ele
+        print(tmp)

@@ -19,14 +19,15 @@ def HexAsciiToSTR(hexasciicode):
     return binascii.unhexlify(hexasciicode.encode('ascii')).decode('utf-8')
 
 
-print(HexAsciiToSTR('e38193e38293e381abe381a1e381af'))
-
+# +
+# print(HexAsciiToSTR('e38193e38293e381abe381a1e381af'))
+# こんにちは
+# -
 
 # 文字列(str)を16進数asciiに変換
 def STRtoHexAscii(string):
     return binascii.b2a_hex(string.encode('utf-8'))
 
-
-print(STRtoHexAscii('Hello'))
-
-
+# +
+# print(STRtoHexAscii('Hello'))
+# b'48656c6c6f'
