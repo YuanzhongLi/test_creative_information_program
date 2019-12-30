@@ -128,6 +128,29 @@ with open(file_path, encoding='ascii') as f:
 string.rstrip('\n')
 ```
 
+## 2013-02
+### theme
+- 論理式
+
+#### (4)
+- マクロ
+```
+exec('a = 1; b = 2; c = a + b')
+c
+3
+
+d = 1
+e = 2
+f = eval(d + e)
+f
+3
+```
+
+- replace
+```
+'aba'.replace('a', 'b')
+'bbb'
+```
 
 ## 2013-08
 ### theme
@@ -145,6 +168,23 @@ c = a.extend(b) # [1, 2, 3, 4, 5]
 ```
 array.pop(index)
 array.pop(-1) # 最後尾削除
+```
+
+## 2014-08
+### theme
+- 文字列探索
+
+### (3)
+- 行ごとにファイル読み込みのとき'\n'のみを削除する
+```
+with open(file_path, 'r') as f:
+        text = f.readlines()
+        txts = []
+        for index, txt in enumerate(text):
+            if txt[-1] == '\n':
+                txts.append(txt[:-1])
+            else:
+                txts.append(txt)
 ```
 
 ## 2015-08
@@ -246,4 +286,34 @@ a, b = b, a
 a = np.empty((2, 3), dtype=Point)
 p = Point(1, 1)
 a[0][0] = p
+```
+
+## その他
+- classをsetに入れる
+```
+class T(object):
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+    def __eq__(self, t):
+        return (self.x == self.x) and (self.y == self.y) and (self.z == self.z)
+    def __hash__(self):
+        string = '{0}, {1}, {2}'.format(self.x, self.y, self.z)
+        return hash(string)
+    def __repr__(self):
+        return '{0}, {1}, {2}'.format(self.x, self.y, self.z)
+
+a = T(1,[1],'a')
+b = T(1,[1, 2], 'b')
+s = set()
+s.add(b)
+s.add(a)
+s.add(b)
+```
+
+- 割り算切り捨て
+```
+4 // 3
+1
 ```
