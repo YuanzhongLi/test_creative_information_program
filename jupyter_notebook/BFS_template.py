@@ -51,7 +51,7 @@ def bfs(graph, s):
     while (len(q) > 0):
         u = q.popleft()
         color[u] = 2
-        for v in graphs[u]:
+        for v in graph[u]:
             if color[v] == 0:
                 q.append(v)
                 color[v] = 1
