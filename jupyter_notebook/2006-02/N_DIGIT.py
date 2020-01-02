@@ -23,7 +23,7 @@ def baseNumber(N, digits, x):
         quotient //= N
         ret[counter] = remainder
         counter += 1
-    return ret   
+    return ret
 
 
 # +

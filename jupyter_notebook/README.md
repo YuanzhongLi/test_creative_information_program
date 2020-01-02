@@ -5,6 +5,11 @@ $pyenv activate test_pypy
 $pypy3 <file_path>
 ```
 
+## 2006-02
+### theme
+- 真理値問題
+- リスト
+
 ## 2007-08
 ### theme
 - 経路問題
