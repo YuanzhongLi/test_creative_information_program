@@ -10,6 +10,23 @@ $pypy3 <file_path>
 - 真理値問題
 - リスト
 
+## 2006-08
+### theme
+- 符号化
+#### (2)
+- isalpha
+```
+# stringが全てalphabetであるかどうか
+string.isalpha()
+```
+- upper(), lower()
+```
+# 全て大文字に
+string.upper()
+# 全て小文字に
+string.lower()
+```
+
 ## 2007-08
 ### theme
 - 経路問題
