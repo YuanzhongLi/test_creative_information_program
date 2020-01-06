@@ -20,8 +20,8 @@ def solve(mid):
 def BS():
     ok = 1000 # 実在解
     ng = -1 # 非実在解
-    while (abs(ok - ng) > 1):
-        mid = int((ok + ng) / 2)
+    while abs(ok - ng) > 1:
+        mid = (ok + ng) // 2
         if solve(mid) :
             ok = mid
         else:

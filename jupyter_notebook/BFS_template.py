@@ -24,11 +24,11 @@ def bfs(graph):
     color = [0 for _ in range(node_num)]
 
     for s in range(node_num):
-        if (color[s] == 2):
+        if color[s] == 2:
             continue
         q = deque([s])
-        color[start] = 1
-        while (len(q) > 0):
+        color[s] = 1
+        while len(q) > 0:
             u = q.popleft()
             color[u] = 2
             for v in graph[u]:
