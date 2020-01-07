@@ -27,7 +27,7 @@ string.upper()
 string.lower()
 ```
 
-## 2007-08
+## 2007-02
 ### theme
 - 経路問題
 #### (4)
@@ -54,7 +54,7 @@ array = \
 array[y][x]
 ```
 
-### (5)
+#### (5)
 - queue, stack
 ```
 from collections import deque
@@ -67,7 +67,7 @@ x = q.pop() #後ろの要素を取り出す, x=4, l=deque([5,0,1,2,3])
 y = q.popleft() # 前の要素を取り出す, y=5, l = deque([0,1,2,3])
 ```
 
-### (7)
+#### (7)
 - set
 ```
 s = set()
@@ -77,9 +77,19 @@ s.add(<setに入れたい要素>)
 s.discard(<削除したい要素>)
 ```
 
+## 2007-08
+### theme
+- グラフ
+- unionfind
+- 二分探索
+
 ## 2010-02
 ### theme
-- グラフ問題z
+- グラフ問題
+
+## 2010-08
+### theme
+- 正規表現
 
 ## 2011-08
 ### theme
