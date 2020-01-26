@@ -144,13 +144,18 @@ import random
 a = random.randrange(10)
 # [10, 20, 30, 40, 50, 60, 70, 80, 90]からランダムに一つ
 a = random.randrange(10, 100, 10)
+```
+
 - time
 ```
 import time
-```
 # 現在のunix時間をfloatで取得
 a = time.time()
 ```
+
+## 2012-02
+### theme
+- 数値解析
 
 
 ## 2012-08
@@ -227,6 +232,10 @@ with open(file_path, 'r') as f:
             else:
                 txts.append(txt)
 ```
+
+## 2015-02
+### theme
+- メモ化再帰
 
 ## 2015-08
 ### theme
